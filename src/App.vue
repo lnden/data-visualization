@@ -14,6 +14,9 @@
         <span>单位:万元</span>
       </sub-title>
     </corner-box>
+    <drap-element>
+      <div>需要拖拽的元素</div>
+    </drap-element>
   </div>
 </template>
 
@@ -21,6 +24,7 @@
 import Echarts from '@/components/Echarts/index.vue';
 import CornerBox from '@/components/CornerBox/index.vue';
 import SubTitle from '@/components/SubTitle/index.vue';
+import DrapElement from '@/components/DrapElement/index.vue';
 
 export default {
   name: 'app',
@@ -58,6 +62,7 @@ export default {
     Echarts,
     CornerBox,
     SubTitle,
+    DrapElement,
   },
 };
 </script>
