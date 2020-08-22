@@ -5,11 +5,22 @@
     <div class="echart-wrapper">
       <Echarts :seriesData="seriesData" :extraOption="extraOption"></Echarts>
     </div>
+    <corner-box class="item" :arc="arc"  :colors="colors">
+      容器盒子
+    </corner-box>
+
+    <corner-box class="item" :arc="arc"  :colors="colors">
+      <sub-title subTitle="教师学历分布">
+        <span>单位:万元</span>
+      </sub-title>
+    </corner-box>
   </div>
 </template>
 
 <script>
 import Echarts from '@/components/Echarts/index.vue';
+import CornerBox from '@/components/CornerBox/index.vue';
+import SubTitle from '@/components/SubTitle/index.vue';
 
 export default {
   name: 'app',
@@ -32,10 +43,21 @@ export default {
       extraOption: {
         color: ['#fe883a', '#2d90d1', '#f75981', '#90e2a9'],
       },
+      arc: {
+        borderRadius: '10px 10px 10px 10px',
+        location: ['topLeft', 'topRight', 'bottomRight', 'bottomLeft'],
+      },
+      colors: {
+        border: '#193c7d',
+        borderArc: '#127aa8',
+        background: 'linear-gradient(-45deg, #121063, #2e2577) left top no-repeat',
+      },
     };
   },
   components: {
     Echarts,
+    CornerBox,
+    SubTitle,
   },
 };
 </script>
@@ -45,5 +67,9 @@ export default {
     width: 300px;
     height: 300px;
     margin: 10px auto;
+  }
+  .item {
+    width: 600px;
+    height: 300px;
   }
 </style>
