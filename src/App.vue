@@ -17,6 +17,7 @@
     <drap-element>
       <div>需要拖拽的元素</div>
     </drap-element>
+    <CountTo />
   </div>
 </template>
 
@@ -25,6 +26,7 @@ import Echarts from '@/components/Echarts/index.vue';
 import CornerBox from '@/components/CornerBox/index.vue';
 import SubTitle from '@/components/SubTitle/index.vue';
 import DrapElement from '@/components/DrapElement/index.vue';
+import CountTo from '@/views/components-demo/CountTo/index.vue';
 
 export default {
   name: 'app',
@@ -63,6 +65,7 @@ export default {
     CornerBox,
     SubTitle,
     DrapElement,
+    CountTo,
   },
 };
 </script>
