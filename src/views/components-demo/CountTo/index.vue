@@ -50,7 +50,7 @@
 import countTo from 'vue-count-to';
 
 export default {
-  name: 'count-to',
+  name: 'count-to-demo',
   components: { countTo },
   data() {
     return {
