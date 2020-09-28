@@ -18,6 +18,7 @@
       <div>需要拖拽的元素</div>
     </drap-element>
     <CountTo />
+    <CustomLifeCycle />
   </div>
 </template>
 
@@ -27,6 +28,7 @@ import CornerBox from '@/components/CornerBox/index.vue';
 import SubTitle from '@/components/SubTitle/index.vue';
 import DrapElement from '@/components/DrapElement/index.vue';
 import CountTo from '@/views/components-demo/CountTo/index.vue';
+import CustomLifeCycle from '@/views/components-demo/CustomLifeCycle/index.vue';
 
 export default {
   name: 'app',
@@ -66,6 +68,7 @@ export default {
     SubTitle,
     DrapElement,
     CountTo,
+    CustomLifeCycle,
   },
 };
 </script>
