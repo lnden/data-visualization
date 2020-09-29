@@ -8,10 +8,10 @@ export default {
   methods: {
     $_hanldeVisiblityChange() {
       if (document.visibilityState === 'hidden') {
-        console.log('hook方式-停掉那一堆东西');
+        // console.log('hook方式-停掉那一堆东西');
       }
       if (document.visibilityState === 'visible') {
-        console.log('hook方式-开启那一堆东西');
+        // console.log('hook方式-开启那一堆东西');
       }
     },
   },
@@ -19,15 +19,15 @@ export default {
     window.addEventListener('visibilitychange', this.$_hanldeVisiblityChange);
     // 此处用了hookEvent
     this.$on('hook:beforeDestroy', () => {
-      console.log('组件关闭时为0');
+      // console.log('组件关闭时为0');
       window.removeEventListener('visibilitychange', this.$_hanldeVisiblityChange);
     });
   },
   pageVisible() {
-    console.log('页面显示出来了');
+    // console.log('页面显示出来了');
   },
   pageHidden() {
-    console.log('页面隐藏了');
+    // console.log('页面隐藏了');
   },
 };
 </script>
