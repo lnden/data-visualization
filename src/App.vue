@@ -19,6 +19,7 @@
     </drap-element>
     <CountTo />
     <CustomLifeCycle />
+    <ImageCompress />
   </div>
 </template>
 
@@ -29,6 +30,7 @@ import SubTitle from '@/components/SubTitle/index.vue';
 import DrapElement from '@/components/DrapElement/index.vue';
 import CountTo from '@/views/components-demo/CountTo/index.vue';
 import CustomLifeCycle from '@/views/components-demo/CustomLifeCycle/index.vue';
+import ImageCompress from '@/views/components-demo/ImageCompress/index.vue';
 
 export default {
   name: 'app',
@@ -69,6 +71,7 @@ export default {
     DrapElement,
     CountTo,
     CustomLifeCycle,
+    ImageCompress,
   },
 };
 </script>
