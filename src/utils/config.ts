@@ -1,12 +1,12 @@
-const config: any = {
+const config = {
   dev: {
-    baseURL: 'http://knowledge.leonp.club:8181/',
+    baseURL: '',
   },
   prod: {
-    baseURL: 'http://bpo.gcheck.com.cn:7067/',
+    baseURL: '',
   },
   test: {
-    baseURL: 'http://knowledge.leonp.club:8181/',
+    baseURL: '',
   },
 };
 
